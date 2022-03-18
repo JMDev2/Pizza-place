@@ -3,8 +3,16 @@ $(document).ready(function(){
       $(".text1").toggle();
       
     });
+    $("#phone").mouseout(function(){
+        $(".text1").hide();
+        
+      });
    
     $("#email").mouseover(function(){
         $(".text2").toggle();
+      });
+
+      $("#email").mouseout(function(){
+        $(".text2").hide();
       });
   });
