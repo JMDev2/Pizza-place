@@ -22,9 +22,13 @@ $(document).ready(function(){
 $('button#submit').click(function(){
     var pizzaSize = $('#size :selected').text();
     var pizzaCrust = $('#crust :selected').text();
-    var pizzaTopping = $("#toppings").val();
+    var pizzaTopping = $("input[type='checkbox']:checked").val();
     
-    console.table(`${pizzaSize} ${pizzaCrust} ${pizzaTopping}`)
+    for( var i = 0; i < pizzaTopping.length; i++){
+        console.log(pizzaTopping)
+    }
 
+    // console.table(`${pizzaTopping} ${pizzaTopping} ${pizzaTopping}`)
+    
    
 });
