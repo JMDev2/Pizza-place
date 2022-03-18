@@ -37,7 +37,7 @@ rel="stylesheet"
         <div class="container-fluid">
           <!-- Toggle button -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler".field-container 
             type="button"
             data-mdb-toggle="collapse"
             data-mdb-target="#navbarSupportedContent"
@@ -66,7 +66,7 @@ rel="stylesheet"
                   <a class="nav-link nav" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav" href="order.html">Order</a>
+                  <a class="nav-link nav" href="about.html">About Us</a>
                 </li>
               
             </ul>
@@ -104,87 +104,41 @@ rel="stylesheet"
         <!-- Container wrapper -->
       </nav>
  
- <!-- top image -->
+ <!-- background iamge-->
  <div class="container">
-     <div class="topImage">
-        <!-- <img src="./images/mypizza.jpeg" class="img-fluid" alt="..."> -->
+     <div class="bgimage">
+         <h1>Please Make Your Order:</h1>
+         <hr>
+         <div class="field-container">
+
+            
+                <h3>Size: </h3>
+                <select class="form-control size">
+                    <option label="Small" value="500">Small</option>
+                    <option label="Medium" value="700">Medium</option>
+                    <option label="Large" value="1000">Large</option>
+                  </select>
+            
+                <h3>Crust:</h3>
+                <select class="form-control toppings">
+                <option label="Olives" value="100">Olives</option>
+                <option label="Cheese" value="50">Cheese</option>
+                <option label="Pepperoni" value="80">Pepperoni</option>
+              </select>
+
+              <h3>Toppings:</h3>
+                <select class="form-control crust">
+                  <option label="Stuffed" value="500">Stuffed</option>
+                  <option label="Gluten-Free" value="200">Gluten-Free</option>
+                  <option label="Crispy" value="300">Crispy</option>
+                </select>
+              
+          </div>
      </div>
 
-     <div class="pizzaImages">
-         <!-- first pizza image -->
-        <div class="card" style="width: 18rem;">
-            <img src="./images/pizza1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="price">
-                <a href="#" class="link-success">Order</a>
-                <p class="price">Kshs. 1000</p>
-             </div>
-            </div>
-          </div>
-           <!-- seconf pizza image -->
-           <div class="card" style="width: 18rem;">
-            <img src="./images/pizza2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="price">
-                <a href="#" class="link-success">Order</a>
-                <p class="price">Kshs. 1000</p>
-             </div>
-            </div>
-          </div>
-            <!-- Third pizza image -->
-            <div class="card" style="width: 18rem;">
-                <img src="./images/pizza3.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="price">
-                    <a href="#" class="link-success">Order</a>
-                    <p class="price">Kshs. 1000</p>
-                 </div>
-                </div>
-              </div>
-     </div>
+</div>
      
-
-     <div class="pizzaImages">
-        <!-- fourth pizza image -->
-       <div class="card" style="width: 18rem;">
-           <img src="./images/pizza1.jpg" class="card-img-top" alt="...">
-           <div class="card-body">
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-             <div class="price">
-                <a href="#" class="link-success">Order</a>
-                <p class="price">Kshs. 1000</p>
-             </div>
-           </div>
-         </div>
-          <!-- fifth pizza image -->
-          <div class="card" style="width: 18rem;">
-           <img src="./images/pizza2.jpg" class="card-img-top" alt="...">
-           <div class="card-body">
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-             <div class="price">
-                <a href="#" class="link-success">Order</a>
-                <p class="price">Kshs. 1000</p>
-             </div>
-           </div>
-         </div>
-           <!-- sixth pizza image -->
-           <div class="card" style="width: 18rem;">
-               <img src="./images/pizza3.jpeg" class="card-img-top" alt="...">
-               <div class="card-body">
-                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                 <div class="price">
-                    <a href="#" class="link-success">Order</a>
-                    <p class="price">Kshs. 1000</p>
-                 </div>
-                 
-               </div>
-             </div>
-    </div>
-    
- </div>
+              
  <!-- footer -->
  <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
