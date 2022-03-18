@@ -77,12 +77,14 @@ rel="stylesheet"
           <!-- Right elements -->
           <div class="d-flex float-end justify-content-end">
             <!-- Icon -->
-            <a class="text-reset me-3" href="tel:0700809279">
-                <i class="fas fa-phone fa-2x px-3"></i>
+            <a  class="text-reset me-3" href="+254700809279">
+                <i id="phone" class="fas fa-phone fa-2x px-3"></i>
+                <p class="text1">+254700809279</p>
             </a>
     
             <a class="text-reset me-3" href="mailto:mainajoseph964@gmail.com">
-                <i class="fas fa-at fa-2x px-3"></i>
+                <i id="email" class="fas fa-at fa-2x px-3"></i>
+                <p class="text2">mainajoseph964@gmail.com</p>
               </a>
     
               <a class="text-reset me-3" href="#">
@@ -134,6 +136,7 @@ rel="stylesheet"
                 </div>
               </div>
      </div>
+     
 
      <div class="pizzaImages">
         <!-- fourth pizza image -->
@@ -169,38 +172,13 @@ rel="stylesheet"
     <div class="container p-4 pb-0">
       <!-- Section: Form -->
       <section class="">
-        <form action="">
-          <!--Grid row-->
-          <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-auto">
-              <p class="pt-2">
-                <strong>Sign up for our newsletter</strong>
-              </p>
-            </div>
-            <!--Grid column-->
+        <form action="https://formspree.io/f/mqknlkdz" method="post" id="form">
   
-            <!--Grid column-->
-            <div class="col-md-5 col-12">
-              <!-- Email input -->
-              <div class="form-outline form-white mb-4">
-                <input type="email" id="form5Example29" class="form-control" />
-                <label class="form-label" for="form5Example29">Email address</label>
-              </div>
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-auto">
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-outline-light mb-4">
-                Subscribe
-              </button>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </form>
+            <input class="transparent-input"   type="email" id="email" name="email" size="30" placeholder="Email..." required>
+            <button type="submit" id="submit">Subscribe</button>
+           
+          
+          </form>
       </section>
       <!-- Section: Form -->
     </div>
@@ -208,8 +186,12 @@ rel="stylesheet"
   
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2022 Mwangi Joseph Maina
+      
     </div>
     <!-- Copyright -->
   </footer>
+  <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>

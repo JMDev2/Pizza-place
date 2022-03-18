@@ -27,3 +27,9 @@
     height: auto;
 
 }
+#submit{
+    width: 8rem;
+}
+.text-reset p{
+    display: none;
+}
