@@ -73,10 +73,24 @@ hr {
 .field-container{
     margin-left: -20%;
 }
-#submit{
+#submitBtn{
     margin: 2rem 15rem 2rem;
     background-color: orange;
     border-radius: 20px 20px 0px 20px;
     height: 5rem;
+    width: 8rem;
     font-size: 30px;
+}
+.mydisplay{
+    height: 10rem;
+    width: 20rem;
+    border: 2px solid black;
+    margin-left: 32.6%;
+    margin-top: -2.7%;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+.mydisplay{
+    display: none;
 }

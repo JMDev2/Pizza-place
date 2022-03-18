@@ -15,7 +15,32 @@ $(document).ready(function(){
       $("#email").mouseout(function(){
         $(".text2").hide();
       });
+
+      $("#submit").click(function(){
+        $(".display").toggle();
+      });
+
   });
+
+  $(document).ready(function(){
+    $('button#submitBtn').click(function() {
+      $('.mydisplay').toggle();
+    });
+       
+});
+let result = document.querySelector(".result");
+result.addEventListener("mouseover", (e)=>{
+    result.style.color = "Blue";
+    result.style.fontSize = '100px';
+
+})
+result.addEventListener("mouseout", (e)=>{
+    result.style.color = "black";
+    result.style.fontSize = '20px';
+})
+    
+   
+
 
 //   capturing the values
 
