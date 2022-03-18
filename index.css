@@ -14,10 +14,10 @@
     height:30rem;
 }
 .pizzaImages{
-    height: 30rem;
+    height: auto;
     width: 100%;
     background-color: wheat;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
