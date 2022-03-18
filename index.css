@@ -64,3 +64,12 @@ hr {
     border: 5px solid rgb(54, 5, 5);
     border-radius: 5px;
   }
+#toppings{
+    float: right;
+    margin-top: -5%;
+    margin-right: 10%;
+    color: white;
+}
+.field-container{
+    margin-left: -20%;
+}

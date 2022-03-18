@@ -112,7 +112,8 @@ rel="stylesheet"
          <div class="field-container">
 
             
-                <h3>Size: </h3>
+                
+                    <h3>Size: </h3>
                 <select class="form-control size">
                     <option label="Small" value="500">Small</option>
                     <option label="Medium" value="700">Medium</option>
@@ -125,15 +126,21 @@ rel="stylesheet"
                 <option label="Cheese" value="50">Cheese</option>
                 <option label="Pepperoni" value="80">Pepperoni</option>
               </select>
+               
 
-              <h3>Toppings:</h3>
-                <select class="form-control crust">
-                  <option label="Stuffed" value="500">Stuffed</option>
-                  <option label="Gluten-Free" value="200">Gluten-Free</option>
-                  <option label="Crispy" value="300">Crispy</option>
-                </select>
+              
+             
               
           </div>
+          <div id="toppings">
+            <h3>Toppings:</h3>
+            <input type="checkbox" id="olives" name="olives" value="olives">
+            <label for="olives"> Olives</label><br>
+            <input type="checkbox" id="cheese" name="cheese" value="cheese">
+            <label for="cheese"> Cheese</label><br>
+            <input type="checkbox" id="peperoni" name="peperoni" value="peperoni">
+            <label for="peperoni"> Peperoni</label><br><br>
+         </div>
      </div>
 
 </div>
