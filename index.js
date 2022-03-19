@@ -32,13 +32,20 @@ $(document).ready(function(){
     });
 
     $('.mydisplay').mouseover(function() {
-      $('button#deliveryBtn').show();
+      $('#delivery').show();
     });
 
-    $('button#deliveryBtn').click(function() {
+    $('#yes').click(function() {
       $('#deliveryForm').show();
     });
-    $('button#deliveryBtn').click(function() {
+    $('#no').click(function() {
+      $('#deliveryForm').show();
+    });
+
+    $('#yes').click(function() {
+      $('#checkoutBtn').show();
+    });
+    $('#no').click(function() {
       $('#checkoutBtn').show();
     });
        

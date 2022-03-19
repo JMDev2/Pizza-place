@@ -113,18 +113,22 @@ hr {
     position: relative;
     top: -25rem;
 }
-#deliveryBtn{
-    position: relative;
-    top: 10rem;
+#delivery{
+    position: relative; 
+    top: -24rem;
+    left: 23rem;
     display: none;
-    width: 11rem;
+    width: 20rem;
     font-size: 20px;
+    color: white; 
+    /* border: 2px solid white; */
+
 }
 #deliveryForm{
-    margin-top: -33%;
+    margin-top: -37%;
     margin-left: 32%;
     color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: block;
     justify-content: center;
     align-items: center;
@@ -135,8 +139,8 @@ hr {
 }
 #checkoutBtn{
     margin-left: 40%;
-    margin-top: 2%;
+    margin-top: -1%;
     width: 12rem;
-    font-size: 30px;
+    font-size: 28px;
     display: none;
 }
