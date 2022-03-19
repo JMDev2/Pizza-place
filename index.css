@@ -41,7 +41,7 @@
 .bgimage{
     background-image: url(https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
     width: 100%;
-    height:40rem;
+    height:50rem;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -89,27 +89,54 @@ hr {
 #submitBtn{
     margin: 2rem 15rem 2rem;
     background-color: orange;
-    border-radius: 20px 20px 0px 20px;
-    height: 5rem;
-    width: 8rem;
+    border-radius: 20px 20px 20px 20px;
+    height: 7rem;
+    width: 13rem;
     font-size: 30px;
     position: relative;
-    top: -20rem;
-    left: 7rem;
+    top: -25rem;
+    left: 12rem;
     color: white;
 }
 .mydisplay{
-    height: 10rem;
-    width: 20rem;
-    border: 2px solid black;
+    height: 13rem;
+    width: 23rem;
+    border: 2px solid white;
     margin-left: 32.6%;
-    margin-top: -2.7%;
     color: white;
-    font-size: 70px;
+    font-size: 30px;
     text-align: center;
+    border-radius: 20px;
 }
 .mydisplay{
     display: none;
     position: relative;
-    top: -20rem;
+    top: -25rem;
+}
+#deliveryBtn{
+    position: relative;
+    top: 10rem;
+    display: none;
+    width: 11rem;
+    font-size: 20px;
+}
+#deliveryForm{
+    margin-top: -33%;
+    margin-left: 32%;
+    color: white;
+    border: 2px solid white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 25rem;
+    display: none;
+    
+}
+#checkoutBtn{
+    margin-left: 40%;
+    margin-top: 2%;
+    width: 12rem;
+    font-size: 30px;
+    display: none;
 }

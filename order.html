@@ -114,16 +114,16 @@ rel="stylesheet"
 
             <h3>Size: </h3>
               <select class="form-control size" id="size">
-              <option label="Small" value="500">Small</option>
-              <option label="Medium" value="700">Medium</option>
-              <option label="Large" value="1000">Large</option>
+              <option  value="small">Small - kshs.500</option>
+              <option  value="mediam">Medium - kshs1000</option>
+              <option  value="large">Large- kshs.1500</option>
              </select>
              <br>
             <h3>Crust:</h3>
               <select class="form-control toppings" id="crust">
-              <option label="crispy" value="100">Crispy</option>
-              <option label="stuffed" value="50">Stuffed</option>
-              <option label="glutten" value="80">Glutten</option>
+              <option value="crispy">Crispy -kshs.500</option>
+              <option value="stuffed">Stuffed - kshs.200</option>
+              <option value="gluten">Glutten - kshs.300</option>
              </select>
              <br>
              <label for="noOfpizza">NO of Pizza</label>
@@ -139,11 +139,21 @@ rel="stylesheet"
             <input type="checkbox" id="peperoni" name="peperoni" value="peperoni">Peperoni
            
            </div>
-           <button type="submit" id="submitBtn">Order</button>
+           <button type="submit" id="submitBtn">Order Now</button>
 
          <div class="mydisplay">
-             <p class="result">Order Now</p>
+             <p class="result">Order</p>
+             
+             <button type="submit" id="deliveryBtn">Home Delivery?</button>
          </div>
+         <form action="" id="deliveryForm">
+         Country:  <input type="text" id="country" name="country" placeholder="Your Country..."> <br> <br>
+          Town: <input type="text" id="city" name="city" placeholder="Your City..."> <br> <br>
+          Address: <input type="text" id="address" name="address" placeholder="Your Address..."> <br> <br>
+         </form>
+         <button type="submit" id="checkoutBtn">Checkout</button>
+          
+         
          </div>
          
           

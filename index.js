@@ -26,16 +26,32 @@ $(document).ready(function(){
     $('button#submitBtn').click(function() {
       $('.mydisplay').toggle();
     });
+
+    $('.mydisplay').mouseover(function() {
+      $('button#submitBtn').hide();
+    });
+
+    $('.mydisplay').mouseover(function() {
+      $('button#deliveryBtn').show();
+    });
+
+    $('button#deliveryBtn').click(function() {
+      $('#deliveryForm').show();
+    });
+    $('button#deliveryBtn').click(function() {
+      $('#checkoutBtn').show();
+    });
+       
        
 });
 let result = document.querySelector(".result");
 result.addEventListener("mouseover", (e)=>{
     result.style.color = "Blue";
-    result.style.fontSize = '100px';
+    result.style.fontSize = '40px';
 
 })
 result.addEventListener("mouseout", (e)=>{
-    result.style.color = "black";
+    result.style.color = "white";
     result.style.fontSize = '20px';
 })
 result.innerHTML = (pizzaSize)
