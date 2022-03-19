@@ -38,6 +38,7 @@ result.addEventListener("mouseout", (e)=>{
     result.style.color = "black";
     result.style.fontSize = '20px';
 })
+result.innerHTML = (pizzaSize)
     
    
 

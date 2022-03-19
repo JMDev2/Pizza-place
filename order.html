@@ -109,29 +109,27 @@ rel="stylesheet"
      <div class="bgimage">
          <h1>Please Make Your Order:</h1>
          <hr>
-         <div class="field-container">
+         <div class="orderContainter">
+            <div class="field-container">
 
-            
-                
-                    <h3>Size: </h3>
-                <select class="form-control size" id="size">
-                    <option label="Small" value="500">Small</option>
-                    <option label="Medium" value="700">Medium</option>
-                    <option label="Large" value="1000">Large</option>
-                  </select>
-            
-                <h3>Crust:</h3>
-                <select class="form-control toppings" id="crust">
-                <option label="crispy" value="100">Crispy</option>
-                <option label="stuffed" value="50">Stuffed</option>
-                <option label="glutten" value="80">Glutten</option>
-              </select>
-               
-
-              
-             
-              
+            <h3>Size: </h3>
+              <select class="form-control size" id="size">
+              <option label="Small" value="500">Small</option>
+              <option label="Medium" value="700">Medium</option>
+              <option label="Large" value="1000">Large</option>
+             </select>
+             <br>
+            <h3>Crust:</h3>
+              <select class="form-control toppings" id="crust">
+              <option label="crispy" value="100">Crispy</option>
+              <option label="stuffed" value="50">Stuffed</option>
+              <option label="glutten" value="80">Glutten</option>
+             </select>
+             <br>
+             <label for="noOfpizza">NO of Pizza</label>
+             <input class="form-control" type="number" name="number" id="number" placeholder="How many Pizza...">
           </div>
+
           <div id="toppings">
             <h3>Toppings:</h3>
             <input type="checkbox" id="olives" name="olives" value="olives">Olives <br>
@@ -140,12 +138,16 @@ rel="stylesheet"
             
             <input type="checkbox" id="peperoni" name="peperoni" value="peperoni">Peperoni
            
-         </div>
-         <button type="submit" id="submitBtn">Order</button>
+           </div>
+           <button type="submit" id="submitBtn">Order</button>
 
          <div class="mydisplay">
-             <p class="result">order</p>
+             <p class="result">Order Now</p>
          </div>
+         </div>
+         
+          
+         
      </div>
 
 </div>

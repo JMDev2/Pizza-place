@@ -44,6 +44,7 @@
     height:40rem;
     background-size: cover;
     background-repeat: no-repeat;
+
     
     
     
@@ -52,10 +53,22 @@
     text-align: center;
 }
 .field-container{
+
+    padding: 0 20% 4%;
+    padding-top: 5%;
+    color: white;
     
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+}
+.orderContainter{
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 7%;
+    padding-bottom: 20px;
+    padding-left: 6%;
+    height: 77%;
+    border-radius: 20px;
+    
 }
 .form-control{
     width: 20%;
@@ -65,9 +78,9 @@ hr {
     border-radius: 5px;
   }
 #toppings{
-    float: right;
-    margin-top: -5%;
-    margin-right: 10%;
+   
+    margin-top: -3%;
+    /* margin-right: 10%; */
     color: white;
 }
 .field-container{
@@ -80,6 +93,10 @@ hr {
     height: 5rem;
     width: 8rem;
     font-size: 30px;
+    position: relative;
+    top: -20rem;
+    left: 7rem;
+    color: white;
 }
 .mydisplay{
     height: 10rem;
@@ -93,4 +110,6 @@ hr {
 }
 .mydisplay{
     display: none;
+    position: relative;
+    top: -20rem;
 }
