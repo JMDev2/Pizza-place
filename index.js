@@ -39,7 +39,7 @@ $(document).ready(function(){
       $('#deliveryForm').show();
     });
     $('#no').click(function() {
-      $('#deliveryForm').show();
+      $('#deliveryForm').hide();
     });
 
     $('#yes').click(function() {
@@ -61,23 +61,52 @@ result.addEventListener("mouseout", (e)=>{
     result.style.color = "white";
     result.style.fontSize = '20px';
 })
-result.innerHTML = (pizzaSize)
+
     
    
 
 
 //   capturing the values
 
-$('button#submit').click(function(){
-    var pizzaSize = $('#size :selected').text();
-    var pizzaCrust = $('#crust :selected').text();
-    var pizzaTopping = $("input[type='checkbox']:checked").val();
+// $('button#submit').click(function(){
+//     var pizzaSize = $('#size :selected').text();
+//     var pizzaCrust = $('#crust :selected').text();
+//     var pizzaTopping = $("input[type='checkbox']:checked").val();
     
-    for( var i = 0; i < pizzaTopping.length; i++){
-        console.log(pizzaTopping)
-    }
+//     for( var i = 0; i < pizzaTopping.length; i++){
+//         console.log(pizzaTopping)
+//     }
 
-    // console.table(`${pizzaTopping} ${pizzaTopping} ${pizzaTopping}`)
+//     // console.table(`${pizzaTopping} ${pizzaTopping} ${pizzaTopping}`)
     
    
-});
+// });
+
+let pizzaSize = document.getElementById("size");
+let pizzaCrust = document.getElementById("crust")
+let pizzaNumber = document.getElementById("number");
+
+
+let form = document.getElementById("form");
+
+let myCountry = document.getElementById("country")
+let myCity = document.getElementById("city")
+let myAddress = document.getElementById("address")
+
+
+let submitBtn = document.getElementById("submitBtn")
+let checkoutBtn = document.getElementById("checkoutBtn")
+
+
+// submitBtn.addEventListener("click", (e)=>{
+//   e.preventDefault()
+  
+//   console.log(`${pizzaSize.value} ${pizzaCrust.value} ${pizzaNumber.value} ${delivery}`)
+// })
+
+checkoutBtn.addEventListener("click", (e)=>{
+  e.preventDefault()
+  // let delivery = form.delivery.value;
+  console.log(`${myCountry.value} ${myCity.value} ${myAddress.value}`)
+})
+
