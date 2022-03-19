@@ -125,7 +125,7 @@ hr {
 
 }
 #deliveryForm{
-    margin-top: -45%;
+    margin-top: -38%;
     margin-left: 32%;
     color: white;
     /* border: 2px solid white; */
@@ -143,4 +143,11 @@ hr {
     width: 12rem;
     font-size: 28px;
     display: none;
+}
+.links li{
+    color: blue;
+    
+}
+.fas, .fab, .text2, .text1{
+    color: white;
 }

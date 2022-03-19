@@ -112,11 +112,8 @@ checkoutBtn.addEventListener("click", (e)=>{
 
   yesBtn.checked = true;
   
-
-
-
-  // let delivery = document.querySelectorAll('input[name="radio"]:checked').value;
-  // let delivery = form.delivery.value;
   console.log(`${yesBtn.value} ${myCountry.value} ${myCity.value} ${myAddress.value}`)
 })
+
+
 
