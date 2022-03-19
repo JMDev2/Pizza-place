@@ -85,6 +85,7 @@ result.addEventListener("mouseout", (e)=>{
 let pizzaSize = document.getElementById("size");
 let pizzaCrust = document.getElementById("crust")
 let pizzaNumber = document.getElementById("number");
+let checkedValue = document.querySelectorAll('#toppings:checked');
 
 
 let form = document.getElementById("form");
@@ -98,15 +99,24 @@ let submitBtn = document.getElementById("submitBtn")
 let checkoutBtn = document.getElementById("checkoutBtn")
 
 
-// submitBtn.addEventListener("click", (e)=>{
-//   e.preventDefault()
+submitBtn.addEventListener("click", (e)=>{
+  e.preventDefault()
   
-//   console.log(`${pizzaSize.value} ${pizzaCrust.value} ${pizzaNumber.value} ${delivery}`)
-// })
+  console.log(`${checkedValue.value} ${pizzaSize.value} ${pizzaCrust.value} ${pizzaNumber.value}`)
+})
 
 checkoutBtn.addEventListener("click", (e)=>{
   e.preventDefault()
+  const yesBtn = document.getElementById('yes');
+
+
+  yesBtn.checked = true;
+  
+
+
+
+  // let delivery = document.querySelectorAll('input[name="radio"]:checked').value;
   // let delivery = form.delivery.value;
-  console.log(`${myCountry.value} ${myCity.value} ${myAddress.value}`)
+  console.log(`${yesBtn.value} ${myCountry.value} ${myCity.value} ${myAddress.value}`)
 })
 
