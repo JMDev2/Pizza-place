@@ -156,3 +156,71 @@ hr {
 #city{
     margin-left: 20px;
 }
+
+
+@media screen and (max-device-width: 640px) {
+    #submitBtn {
+        margin: 1rem 10rem 1rem;
+        background-color: green;
+        border-radius: 5px 5px 5px 5px;
+        height: 3rem;
+        width: 4rem;
+        font-size: 6px;
+        position: relative;
+        top: -15rem;
+        left: 2rem;
+        color: white;
+    }
+  }
+  @media screen and (max-device-width: 640px) {
+    #delivery {
+    position: relative; 
+    top: -18rem;
+    left: 10rem;
+    display: none;
+    width: 10rem;
+    font-size: 5px;
+    color: green;
+    }
+  }
+  @media screen and (max-device-width: 640px) {
+    #submitBtn {
+        margin-top: -38%;
+        margin-left: 25%;
+        color: green;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        width: 15rem;
+        display: none;
+        font-size: 10px;
+    }
+  }
+  @media screen and (max-device-width: 640px) {
+    #deliveryForm{
+        margin-top: -70%;
+        margin-left: 10%;
+        color: white;
+        /* border: 2px solid white; */
+        display: block;
+        justify-content: center;
+        align-items: center;
+        /* padding: 4px; */
+        width: 7rem;
+        display: none;
+    }
+  }
+
+  @media screen and (max-device-width: 640px) {
+    .mydisplay{
+        height: 5rem;
+        width: 15rem;
+        border: 1px solid white;
+        margin-left: 15.6%;
+        color: white;
+        border-radius: 10px;
+        background-color: transparent;
+        align-items: center;
+    }
+  }
