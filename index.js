@@ -54,12 +54,12 @@ $(document).ready(function () {
 let result = document.querySelector(".result");
 result.addEventListener("mouseover", (e) => {
   result.style.color = "Blue";
-  result.style.fontSize = '40px';
+  // result.style.fontSize = '40px';
 
 })
 result.addEventListener("mouseout", (e) => {
   result.style.color = "white";
-  result.style.fontSize = '20px';
+  // result.style.fontSize = '20px';
 })
 
 
@@ -85,19 +85,24 @@ let checkoutBtn = document.getElementById("checkoutBtn")
 
 checkoutBtn.addEventListener("click", (e) => {
   e.preventDefault()
-  // const yesBtn = document.getElementById('yes');
-  // yesBtn.checked = true;
+  const yesBtn = document.getElementById('yes');
+  yesBtn.checked = true;
+ let deliveryfee = 0;
+  if (yesBtn === "true"){
+    deliveryfee = 200;
+    console.log(deliveryfee)
+  }
 
-  console.log(` ${myCountry.value} ${myCity.value} ${myAddress.value}`)
-  $(".result").append( "<li>" + myCountry.value, myCity.value, myAddress.value + "</li>");
-  alert(`Dear Customer Your Order will be delivered in: ${myCountry.value} ${myCity.value} ${myAddress.value} `)
+  console.log(` ${myCountry.value} ${myCity.value} ${myAddress.value} ${size.value}`)
+  $(".result").append( "<li>" + "Dear customer your order is: " + size.value + " Pizza.It will be delivered in " +  myCountry.value,", ", myCity.value, ", ", myAddress.value + ". Our Deliveries take a maximum of 2 hours. Regards!" + "</li>");
+  // alert(`Dear Customer You Ordered   ${size.value} Pizza. It  will be delivered in: ${myCountry.value} ${myCity.value} ${myAddress.value} `)
 
 })
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault()
 
-let size = document.getElementById("size").value;
+var size = document.getElementById("size").value;
 let crust = document.getElementById("crust").value;
 let numberOne = parseInt(document.getElementById("numberOne").value);
 let myToppings = [];
@@ -105,6 +110,7 @@ let myToppings = [];
 
 $("input:checkbox[name='topping']:checked").each(function(){
   myToppings.push($(this).val());
+  
  });
 
 
@@ -117,7 +123,14 @@ pizza1.getTotalcharge()
 
 let newOrder = new Pizza(size, crust, numberOne, myToppings )
 
-$(".result").append( "<li>" + "Your Total Order is:" + newOrder.getTotalcharge() + "</li>");
+if(numberOne === ""){
+  alert("Please enter the number of pizza you purchased")
+}
+else{
+  $(".result").append( "<li>" + "Your Total Order is:" + newOrder.getTotalcharge() + "</li>");
+
+}
+
 
 })  
 

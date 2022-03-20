@@ -105,10 +105,9 @@ hr {
     border: 2px solid white;
     margin-left: 32.6%;
     color: white;
-    font-size: 30px;
-    text-align: center;
     border-radius: 20px;
-    background-color: aqua;
+    background-color: transparent;
+    align-items: center;
 }
 .mydisplay{
     display: none;
