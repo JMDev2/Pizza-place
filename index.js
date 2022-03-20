@@ -63,14 +63,6 @@ result.addEventListener("mouseout", (e) => {
 })
 
 
-
-
-
-
-
-// let toppings = [];
-// console.log(pizzaSize)
-
 let form = document.getElementById("form");
 
 let myCountry = document.getElementById("country")
@@ -79,9 +71,6 @@ let myAddress = document.getElementById("address")
 
 let submitBtn = document.getElementById("submitBtn")
 let checkoutBtn = document.getElementById("checkoutBtn")
-
-
-
 
 checkoutBtn.addEventListener("click", (e) => {
   e.preventDefault()
@@ -113,8 +102,6 @@ $("input:checkbox[name='topping']:checked").each(function(){
   
  });
 
-
-console.log(myToppings)
 const pizza1 = new Pizza(size, crust, numberOne, myToppings)
 console.log(`${numberOne}`)
 
@@ -128,10 +115,7 @@ if(numberOne === ""){
 }
 else{
   $(".result").append( "<li>" + "Your Total Order is:" + newOrder.getTotalcharge() + "</li>");
-
 }
-
-
 })  
 
 let price ;
@@ -144,9 +128,6 @@ function Pizza(pizzaSize, pizzaCrust, pizzaNumber, pizzaToppings) {
   this.pizzaCrust = pizzaCrust;
   this.pizzaNumber = pizzaNumber;
   this.pizzaToppings = pizzaToppings;
- 
-
-
 };
 
 Pizza.prototype.getTotalcharge = function () {
