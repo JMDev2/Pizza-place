@@ -103,7 +103,7 @@ hr {
     height: 10rem;
     width: 23rem;
     border: 2px solid white;
-    margin-left: 32.6%;
+    margin-left: 37.6%;
     color: white;
     border-radius: 20px;
     background-color: transparent;
@@ -117,7 +117,7 @@ hr {
 #delivery{
     position: relative; 
     top: -24rem;
-    left: 23rem;
+    left: 26rem;
     display: none;
     width: 20rem;
     font-size: 20px;
@@ -127,7 +127,7 @@ hr {
 }
 #deliveryForm{
     margin-top: -38%;
-    margin-left: 32%;
+    margin-left: 37%;
     color: white;
     /* border: 2px solid white; */
     display: block;
@@ -139,7 +139,7 @@ hr {
     
 }
 #checkoutBtn{
-    margin-left: 40%;
+    margin-left: 45%;
     margin-top: -1%;
     width: 12rem;
     font-size: 28px;
@@ -155,6 +155,9 @@ hr {
 }
 #city{
     margin-left: 20px;
+}
+#crust, #size, #numberOne{
+    width: 40%;
 }
 
 
