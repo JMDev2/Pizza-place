@@ -13,6 +13,15 @@
     width: 100%;
     height:30rem;
 }
+#header{
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    padding: 13%;
+    font-size: 90px;
+    font-family: 'Smokum', cursive;
+    
+}
 .pizzaImages{
     height: auto;
     width: 100%;
