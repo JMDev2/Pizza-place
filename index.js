@@ -1,92 +1,75 @@
-$(document).ready(function(){
-    $("#phone").mouseover(function(){
-      $(".text1").toggle();
-      
-    });
-    $("#phone").mouseout(function(){
-        $(".text1").hide();
-        
-      });
-   
-    $("#email").mouseover(function(){
-        $(".text2").toggle();
-      });
+$(document).ready(function () {
+  $("#phone").mouseover(function () {
+    $(".text1").toggle();
 
-      $("#email").mouseout(function(){
-        $(".text2").hide();
-      });
-
-      $("#submit").click(function(){
-        $(".display").toggle();
-      });
+  });
+  $("#phone").mouseout(function () {
+    $(".text1").hide();
 
   });
 
-  $(document).ready(function(){
-    $('button#submitBtn').click(function() {
-      $('.mydisplay').toggle();
-    });
+  $("#email").mouseover(function () {
+    $(".text2").toggle();
+  });
 
-    $('.mydisplay').mouseover(function() {
-      $('button#submitBtn').hide();
-    });
+  $("#email").mouseout(function () {
+    $(".text2").hide();
+  });
 
-    $('.mydisplay').mouseover(function() {
-      $('#delivery').show();
-    });
+  $("#submit").click(function () {
+    $(".display").toggle();
+  });
 
-    $('#yes').click(function() {
-      $('#deliveryForm').show();
-    });
-    $('#no').click(function() {
-      $('#deliveryForm').hide();
-    });
+});
 
-    $('#yes').click(function() {
-      $('#checkoutBtn').show();
-    });
-    $('#no').click(function() {
-      $('#checkoutBtn').show();
-    });
-       
-       
+$(document).ready(function () {
+  $('button#submitBtn').click(function () {
+    $('.mydisplay').toggle();
+  });
+
+  $('.mydisplay').mouseover(function () {
+    $('button#submitBtn').hide();
+  });
+
+  $('.mydisplay').mouseover(function () {
+    $('#delivery').show();
+  });
+
+  $('#yes').click(function () {
+    $('#deliveryForm').show();
+  });
+  $('#no').click(function () {
+    $('#deliveryForm').hide();
+  });
+
+  $('#yes').click(function () {
+    $('#checkoutBtn').show();
+  });
+  $('#no').click(function () {
+    $('#checkoutBtn').show();
+  });
+
+
 });
 let result = document.querySelector(".result");
-result.addEventListener("mouseover", (e)=>{
-    result.style.color = "Blue";
-    result.style.fontSize = '40px';
+result.addEventListener("mouseover", (e) => {
+  result.style.color = "Blue";
+  result.style.fontSize = '40px';
 
 })
-result.addEventListener("mouseout", (e)=>{
-    result.style.color = "white";
-    result.style.fontSize = '20px';
+result.addEventListener("mouseout", (e) => {
+  result.style.color = "white";
+  result.style.fontSize = '20px';
 })
 
-    
-   
 
 
-//   capturing the values
 
-// $('button#submit').click(function(){
-//     var pizzaSize = $('#size :selected').text();
-//     var pizzaCrust = $('#crust :selected').text();
-//     var pizzaTopping = $("input[type='checkbox']:checked").val();
-    
-//     for( var i = 0; i < pizzaTopping.length; i++){
-//         console.log(pizzaTopping)
-//     }
 
-//     // console.table(`${pizzaTopping} ${pizzaTopping} ${pizzaTopping}`)
-    
-   
-// });
 
-let pizzaSize = document.getElementById("size");
-let pizzaCrust = document.getElementById("crust")
-let pizzaNumber = document.getElementById("number");
-let checkedValue = document.querySelectorAll('#toppings:checked');
 
+// let toppings = [];
+// console.log(pizzaSize)
 
 let form = document.getElementById("form");
 
@@ -94,26 +77,100 @@ let myCountry = document.getElementById("country")
 let myCity = document.getElementById("city")
 let myAddress = document.getElementById("address")
 
-
 let submitBtn = document.getElementById("submitBtn")
 let checkoutBtn = document.getElementById("checkoutBtn")
 
 
-submitBtn.addEventListener("click", (e)=>{
+
+
+checkoutBtn.addEventListener("click", (e) => {
   e.preventDefault()
-  
-  console.log(`${checkedValue.value} ${pizzaSize.value} ${pizzaCrust.value} ${pizzaNumber.value}`)
+  // const yesBtn = document.getElementById('yes');
+  // yesBtn.checked = true;
+
+  console.log(` ${myCountry.value} ${myCity.value} ${myAddress.value}`)
+  $(".result").append( "<li>" + myCountry.value, myCity.value, myAddress.value + "</li>");
+  alert(`Dear Customer Your Order will be delivered in: ${myCountry.value} ${myCity.value} ${myAddress.value} `)
+
 })
 
-checkoutBtn.addEventListener("click", (e)=>{
+submitBtn.addEventListener("click", (e) => {
   e.preventDefault()
-  const yesBtn = document.getElementById('yes');
+
+let size = document.getElementById("size").value;
+let crust = document.getElementById("crust").value;
+let numberOne = parseInt(document.getElementById("numberOne").value);
+let myToppings = [];
 
 
-  yesBtn.checked = true;
+$("input:checkbox[name='topping']:checked").each(function(){
+  myToppings.push($(this).val());
+ });
+
+
+console.log(myToppings)
+const pizza1 = new Pizza(size, crust, numberOne, myToppings)
+console.log(`${numberOne}`)
+
+pizza1.getTotalcharge()
+ 
+
+let newOrder = new Pizza(size, crust, numberOne, myToppings )
+
+$(".result").append( "<li>" + "Your Total Order is:" + newOrder.getTotalcharge() + "</li>");
+
+})  
+
+let price ;
+let crust_price;
+let sizePrice;
+let total = 0
+
+function Pizza(pizzaSize, pizzaCrust, pizzaNumber, pizzaToppings) {
+  this.pizzaSize = pizzaSize;
+  this.pizzaCrust = pizzaCrust;
+  this.pizzaNumber = pizzaNumber;
+  this.pizzaToppings = pizzaToppings;
+ 
+
+
+};
+
+Pizza.prototype.getTotalcharge = function () {
+  let sizePrice;
+  if (this.pizzaSize === "small"){
+    sizePrice = 500
+  }
+  else if (this.pizzaSize === "Medium"){
+    sizePrice = 1000
+  }
+  else {
+    sizePrice = 1500
+  }
+
+  let crustPrice;
+  if (this.pizzaCrust === "crispy"){
+    crustPrice = 400;
+  }
+  else if (this.pizzaCrust === "stuffed"){
+    crustPrice = 200;
+  }
+  else{
+    crustPrice = 300;
+  }
+
+  let toppingPrice;
+  if(this.pizzaToppings === "olives"){
+    toppingPrice = 200;
+  }
+  else{
+    toppingPrice =0;
+  }
   
-  console.log(`${yesBtn.value} ${myCountry.value} ${myCity.value} ${myAddress.value}`)
-})
 
-
+  let total = (sizePrice + crustPrice + toppingPrice) * this.pizzaNumber;
+  return total;
+  
+  
+}
 

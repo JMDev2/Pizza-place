@@ -44,6 +44,7 @@
     height:50rem;
     background-size: cover;
     background-repeat: no-repeat;
+    
 
     
     
@@ -107,6 +108,7 @@ hr {
     font-size: 30px;
     text-align: center;
     border-radius: 20px;
+    background-color: aqua;
 }
 .mydisplay{
     display: none;
@@ -144,8 +146,8 @@ hr {
     font-size: 28px;
     display: none;
 }
-.links li{
-    color: blue;
+.links li a{
+    color: white;
     
 }
 .fas, .fab, .text2, .text1{

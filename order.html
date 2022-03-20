@@ -27,7 +27,7 @@ rel="stylesheet"
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Barriecito&family=Lobster&family=Nanum+Gothic:wght@700&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,500;1,100&family=Teko:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>My Portfolio</title>
+    <title>Order</title>
 </head>
 <body>
 
@@ -67,7 +67,7 @@ rel="stylesheet"
                     <a class="nav-link nav" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav" href="about.html">About Us</a>
+                    <a class="nav-link nav" href="order.html">Make order</a>
                   </li>
                 
                  </ul>
@@ -117,34 +117,37 @@ rel="stylesheet"
             <h3>Size: </h3>
               <select class="form-control size" id="size">
               <option  value="small">Small - kshs.500</option>
-              <option  value="mediam">Medium - kshs1000</option>
+              <option  value="Medium">Medium - kshs1000</option>
               <option  value="large">Large- kshs.1500</option>
              </select>
              <br>
             <h3>Crust:</h3>
               <select class="form-control toppings" id="crust">
-              <option value="crispy">Crispy -kshs.500</option>
+              <option value="crispy">Crispy -kshs.400</option>
               <option value="stuffed">Stuffed - kshs.200</option>
               <option value="gluten">Glutten - kshs.300</option>
              </select>
              <br>
              <label for="noOfpizza">NO of Pizza</label>
-             <input class="form-control" type="number" name="number" id="number" placeholder="How many Pizza...">
+             <input class="form-control" type="number" name="numberOne" id="numberOne" placeholder="How many Pizza...">
           </div>
 
           <div id="toppings">
             <h3>Toppings:</h3>
-            <input type="checkbox" id="olives" name="olives" value="olives">Olives <br>
+            <input type="checkbox" id="olives" name="topping" value="200">Olives <br>
            
-            <input type="checkbox" id="cheese" name="cheese" value="cheese">Cheese <br>
+            <input type="checkbox" id="cheese" name="topping" value="200">Cheese <br>
             
-            <input type="checkbox" id="peperoni" name="peperoni" value="peperoni">Peperoni
+            <input type="checkbox" id="peperoni" name="topping" value="200">Peperoni
            
            </div>
            <button type="submit" id="submitBtn">Order Now</button>
 
          <div class="mydisplay">
-             <p class="result">Order</p>
+           <ul class="result">
+             
+           </ul>
+             
              
              
             
@@ -163,7 +166,7 @@ rel="stylesheet"
           Address: <input type="text" id="address" name="address" placeholder="Your Address..."> <br> <br>
          </form>
          <button type="submit" id="checkoutBtn">Checkout</button>
-          
+         
          
          </div>
          
