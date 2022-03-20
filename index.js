@@ -35,14 +35,14 @@ $(document).ready(function () {
     $('#delivery').show();
   });
 
-  $('#yes').click(function () {
+  $('.mydisplay').mouseover(function () {
     $('#deliveryForm').show();
   });
-  $('#no').click(function () {
-    $('#deliveryForm').hide();
-  });
+  // $('#no').click(function () {
+  //   $('#deliveryForm').hide();
+  // });
 
-  $('#yes').click(function () {
+  $('.mydisplay').mouseover(function () {
     $('#checkoutBtn').show();
   });
   // $('#no').click(function () {
@@ -94,8 +94,8 @@ checkoutBtn.addEventListener("click", (e) => {
   }
 
   console.log(` ${myCountry.value} ${myCity.value} ${myAddress.value} ${size.value}`)
-  $(".result").append( "<li>" + "Dear customer your order is: " + size.value + " Pizza.It will be delivered in " +  myCountry.value,", ", myCity.value, ", ", myAddress.value + ". Our Deliveries take a maximum of 2 hours. Regards!" + "</li>");
-  // alert(`Dear Customer You Ordered   ${size.value} Pizza. It  will be delivered in: ${myCountry.value} ${myCity.value} ${myAddress.value} `)
+  $(".result").append( "<li>" + "Dear customer your order is: " + numberOne.value + " " + size.value + " Pizza.It will be delivered in " +  myCountry.value,", ", myCity.value, ", ", myAddress.value + ". Our Deliveries take a maximum of 2 hours. Regards!" + "</li>");
+  alert(`Dear Customer You Ordered ${numberOne.value}  ${size.value} Pizza. It  will be delivered in: ${myCountry.value} ${myCity.value} ${myAddress.value} `)
 
 })
 
@@ -104,7 +104,7 @@ submitBtn.addEventListener("click", (e) => {
 
 var size = document.getElementById("size").value;
 let crust = document.getElementById("crust").value;
-let numberOne = parseInt(document.getElementById("numberOne").value);
+var numberOne = parseInt(document.getElementById("numberOne").value);
 let myToppings = [];
 
 
