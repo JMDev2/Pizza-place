@@ -45,9 +45,9 @@ $(document).ready(function () {
   $('#yes').click(function () {
     $('#checkoutBtn').show();
   });
-  $('#no').click(function () {
-    $('#checkoutBtn').show();
-  });
+  // $('#no').click(function () {
+  //   $('#checkoutBtn').show();
+  // });
 
 
 });

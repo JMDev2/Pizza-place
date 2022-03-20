@@ -100,7 +100,7 @@ hr {
     color: white;
 }
 .mydisplay{
-    height: 13rem;
+    height: 10rem;
     width: 23rem;
     border: 2px solid white;
     margin-left: 32.6%;
@@ -139,11 +139,12 @@ hr {
     
 }
 #checkoutBtn{
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: -1%;
     width: 12rem;
     font-size: 28px;
     display: none;
+    border-radius: 15px;
 }
 .links li a{
     color: white;
@@ -151,4 +152,7 @@ hr {
 }
 .fas, .fab, .text2, .text1{
     color: white;
+}
+#city{
+    margin-left: 20px;
 }
