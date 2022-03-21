@@ -92,23 +92,11 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault()
 
 var size = document.getElementById("size").value;
-let crust = document.getElementById("crust").value;
+var crust = document.getElementById("crust").value;
 var numberOne = parseInt(document.getElementById("numberOne").value);
-let myToppings = [];
+var toppings = document.getElementById("toppings")
 
-
-$("input:checkbox[name='topping']:checked").each(function(){
-  myToppings.push($(this).val());
-  
- });
-
-const pizza1 = new Pizza(size, crust, numberOne, myToppings)
-console.log(`${numberOne}`)
-
-pizza1.getTotalcharge()
- 
-
-let newOrder = new Pizza(size, crust, numberOne, myToppings )
+var newOrder = new Pizza(size, crust, numberOne, toppings)
 
 if(numberOne === ""){
   alert("Please enter the number of pizza you purchased")
@@ -131,7 +119,7 @@ function Pizza(pizzaSize, pizzaCrust, pizzaNumber, pizzaToppings) {
 };
 
 Pizza.prototype.getTotalcharge = function () {
-  let sizePrice;
+  var sizePrice;
   if (this.pizzaSize === "small"){
     sizePrice = 500
   }
@@ -154,17 +142,19 @@ Pizza.prototype.getTotalcharge = function () {
   }
 
   let toppingPrice;
-  if(this.pizzaToppings === "olives"){
+  if (this.pizzaToppings === "olives"){
     toppingPrice = 200;
-  }
+  }else if (this.pizzaToppings === "cheese"){
+    toppingPrice = 200;
+    }
   else{
-    toppingPrice =0;
+    toppingPrice =200;
   }
   
 
   let total = (sizePrice + crustPrice + toppingPrice) * this.pizzaNumber;
   return total;
-  
+  console.log(total)
   
 }
 

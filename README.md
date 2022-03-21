@@ -6,6 +6,19 @@ By Mwangi Joseph Maina
 ### Description
 This is a web page that allows customers to make their oders online by selecting the type of Pizza they want, see the charges, make orders and select whether they want it delivered or pick up by themselves.
 
+### BDD
+Choose the name of the pizza you
+Choose the size(small,large,medium)
+choose the crust(crispy,stuffed,gluten-free)
+choose toppings
+order as many pizza as one wants
+place order and see total price by clciking on the button. See the Total charge for the selected items.
+option for delivery,,alert on delivery price
+prompt ot enter adress,and alert for showing location for delivery
+checkout for total amount charged
+Enjoy your order
+
+
 ### Prerequisities
 You need to have git installed
 You can install it with the following command in your terminal

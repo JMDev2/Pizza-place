@@ -131,17 +131,18 @@ rel="stylesheet"
               <option value="gluten">Glutten - kshs.300</option>
             </select>
              <br>
-             <label for="noOfpizza">NO of Pizza</label>
+             <label for="noOfpizza">No of Pizza</label>
              <input class="form-control" type="number" name="numberOne" id="numberOne" placeholder="number" min="1" required>
-          </div>
+             <h3>Toppings:</h3>
+            <select class="form-control toppings" id="toppings">
+              <option value="olives">Olives - kshs.200</option>
+              <option value="cheese">Cheese - kshs.200</option>
+              <option value="peperoni">Peperoni - kshs.200</option>
+            </select>
+         
 
-          <div id="toppings">
-            <h3>Toppings:</h3>
-            <input type="checkbox" id="olives" name="topping" value="200">Olives <br>
-           
-            <input type="checkbox" id="cheese" name="topping" value="200">Cheese <br>
+          
             
-            <input type="checkbox" id="peperoni" name="topping" value="200">Peperoni
            
            </div>
            <button type="submit" id="submitBtn">Order Now</button>

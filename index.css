@@ -54,10 +54,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     
-
-    
-    
-    
 }
 .bgimage h1{
     text-align: center;
@@ -87,12 +83,7 @@ hr {
     border: 5px solid rgb(54, 5, 5);
     border-radius: 5px;
   }
-#toppings{
-   
-    margin-top: -3%;
-    /* margin-right: 10%; */
-    color: white;
-}
+
 .field-container{
     margin-left: -20%;
 }
@@ -165,9 +156,10 @@ hr {
 #city{
     margin-left: 20px;
 }
-#crust, #size, #numberOne{
+#crust, #size, #numberOne, #toppings{
     width: 40%;
 }
+
 
 
 @media screen and (max-device-width: 640px) {
